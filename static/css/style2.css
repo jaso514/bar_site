@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255, 181, 0,0.6) 90%);
+  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255, 181, 0,0.6) 90%);
+  background: -o-linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255, 181, 0, 0.6) 90%);
+  background: linear-gradient(0deg, rgba(255,255,255,0.3) 0%, rgba(255, 181, 0,0.6) 90%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header .social-media-icons {
+  width: 80px;
+  text-align: right;
+}
+header .social-media-icons i{
+  color: #7C2529;
+  font-size: 2em;
+}
+header .logo-container {
+  max-width: 120px;
+  margin: 0 auto;
+}
+header .logo {
+  max-width: 70px;
+  height: auto;
+}
+header .logo-link {
+  display: block;
+}
+header .menu-container {
+  flex: 1;
+  text-align: center;
+}
+header .menu-container .nav-item{
+  padding: 0 1em;
+}
+
+header .menu-container .nav-link{
+  color: #212322 !important;
+  font-weight: bold;
+}
+/* Content */
+main {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+/* Hero banner */
+.banner {
+  width: 100%;
+}
+.banner-text {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: #fff;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hero-text {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para la sección de servicios */
+#about-us {
+  position: relative;
+  background-color: #FFB500;
+  padding: 40px 0;
+}
+
+#about-us h2 {
+  color: #7C2529;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-us-box {
+  background-color: #fff;
+  border: 1px solid #A2AAAD;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: calc(33.33% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-us-box p {
+  font-size: 16px;
+  color: #212322;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* Footer */
+footer .logo{
+  width: 60px;
+}
+
+@media (max-width: 768px) {
+  .about-us-box {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-box {
+    width: 100%;
+  }
+}

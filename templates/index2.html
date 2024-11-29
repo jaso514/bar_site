@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="banner top-0 start-0 w-100 h-100">
+    <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Hero Image" class="img-fluid">
+    <div class="banner-text container d-flex justify-content-center align-items-center">
+        <div class="justify-content-start">
+            <h1 class="display-4">Welcome to our website</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about-us">
+    <h2>Nosotros somos...</h2>
+    <div class="about-us-container">
+      <div class="about-us-box">
+        <img src="image1.jpg" alt="Image 1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="about-us-box">
+        <img src="image2.jpg" alt="Image 2">
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="about-us-box">
+        <img src="image3.jpg" alt="Image 3">
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container-fluid banner top-0 start-0 w-100 p-0">
+    <img src="{{ url_for('static', filename='images/banner_main.webp') }}" alt="Hero Image" class="img-fluid w-100">
+    <div class="container-lg">
+        <div class="text-white text-hero px-2">
+            <h1 class="display-4">Bienvenidos a 2bleB Bar</h1>
+            <p class="lead">Transformamos tu evento con cócteles tropicales y un servicio impecable.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-us" id="about-us">
+    <div class="container-lg">
+        <h2 id="about-us">Nosotros...</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-center d-flex justify-content-center">
+            <div class="col">
+                <div class="box-container">
+                    <img src="{{ url_for('static', filename='images/us_tropical.png') }}" class="card-img-top img-fluid" alt="Image">
+                    <p class="card-text py-3">Llevamos el bar a tu fiesta. Ofrecemos experiencias únicas en coctelería.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-container">
+                    <img src="{{ url_for('static', filename='images/us_mixology.png') }}" class="card-img-top img-fluid" alt="Image">
+                    <p class="card-text py-3">Fusionamos lo clásica y técnicas modernas de mixología creativa.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-container">
+                    <img src="{{ url_for('static', filename='images/us_service.png') }}" class="card-img-top img-fluid" alt="Image">
+                    <p class="card-text py-3">Aseguramos calidad, autenticidad y la satisfacción de nuestros clientes.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-container">
+                    <img src="{{ url_for('static', filename='images/us_drink_culture.png') }}" class="card-img-top img-fluid" alt="Image">
+                    <p class="card-text py-3">Promovemos la cultura del buen beber, explorando el fascinante mundo de los rones del Caribe y su conexión con otras bebidas.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-container">
+                    <img src="{{ url_for('static', filename='images/us_eco.png') }}" class="card-img-top img-fluid" alt="Image">
+                    <p class="card-text py-3">Además, trabajamos con conciencia ecológica, cuidando los recursos naturales y minimizando nuestro impacto ambiental.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery py-2">
+    <div class="container-lg">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0">
+            <div class="col col-sm-auto m-auto">
+                <img src="{{ url_for('static', filename='images/cocktail_daiquiri.jpg') }}" class="img-fluid object-fit-cover" alt="Image">
+                <div class="overlay d-flex align-items-center">
+                    <p class="m-auto text-center p-1"><b>Daiquiri a la Brasa</b><br>Clásico Tropical, Notas de Asado, Especiado</p>
+                </div>
+            </div>
+            <div class="col col-sm-auto m-auto">
+                <img src="{{ url_for('static', filename='images/cocktail_mojito.jpg') }}" class="img-fluid object-fit-cover" alt="Image">
+                <div class="overlay d-flex align-items-center">
+                    <p class="m-auto text-center p-1"><b>Mojito Cubano</b><br>Fresco, Herbal, Tradición y Modernidad</p>
+                </div>
+            </div>
+            <div class="col col-sm-auto m-auto">
+                <img src="{{ url_for('static', filename='images/cocktail_pina.jpg') }}" class="img-fluid object-fit-cover" alt="Image">
+                <div class="overlay d-flex align-items-center">
+                    <p class="m-auto text-center p-1"><b>Ananá Pasión</b><br>Frutal, Mágico, Caribeño</p>
+                </div>
+            </div>
+            <div class="col col-sm-auto m-auto">
+                <img src="{{ url_for('static', filename='images/cocktail_caipirina.jpg') }}" class="img-fluid object-fit-cover" alt="Image">
+                <div class="overlay d-flex align-items-center">
+                    <p class="m-auto text-center p-1"><b>Coco Caipi</b><br>Cítrico, Notas Afrutadas, Exótico Sabor de la Caña de Azúcar</p>
+                </div>
+            </div>
+            <div class="col col-sm-auto m-auto">
+                <img src="{{ url_for('static', filename='images/cocktail_gin.jpg') }}" class="img-fluid object-fit-cover" alt="Image">
+                <div class="overlay d-flex align-items-center">
+                    <p class="m-auto text-center p-1"><b>Tónica Exótica</b><br>Refrescante, Cítrico, Especiado</p>
+                </div>
+            </div>
+            <div class="col col-sm-auto m-auto">
+                <img src="{{ url_for('static', filename='images/cocktail_spritz.jpg') }}" class="img-fluid object-fit-cover" alt="Image">
+                <div class="overlay d-flex align-items-center">
+                    <p class="m-auto text-center p-1"><b>Aperol Ginger Twist</b><br>Vibrante, Aromático, Fresco</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="services" id="services">
+    <div class="container-lg">
+        <h2 id="services">Nuestros Servicios</h2>
+
+        <div>
+            <div class="row py-2">
+                <div class="col-md-7">
+                    <img src="{{ url_for('static', filename='images/service_open_bar.png') }}" class="img-fluid" alt="Image">
+                </div>
+                <div class="col-md-5">
+                    <h5>Open Bar</h5>
+                    <p>Disfruta de un servicio de Open Bar personalizado con una amplia variedad de cócteles, tanto con como sin alcohol. Diseñamos la carta ideal para tu evento, adaptándonos a tus preferencias para garantizar una experiencia única y memorable.</p>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-5 text-right order-sm-2 order-md-1">
+                    <h5 >Steps Bar</h5>
+                    <p>Descubre una experiencia única con nuestra cata guiada de cócteles, diseñada para evolucionar junto al ritmo de tu evento. Desde cócteles suaves de apertura, opciones intermedias, hasta mezclas intensas para el clímax y un final memorable. ¡Perfecta sinergia en cada etapa!</p>
+                </div>
+                <div class="col-md-7 order-sm-1 order-md-2">
+                    <img src="{{ url_for('static', filename='images/service_steps_bar.png') }}" class="img-fluid" alt="Image">
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-md-7">
+                    <img src="{{ url_for('static', filename='images/service_rum_tasting.png') }}" class="img-fluid" alt="Image">
+                </div>
+                <div class="col-md-5">
+                    <h5>Cata de Ron</h5>
+                    <p>Sumérgete en una cata guiada de Rones del Caribe, explorando su rica historia y evolución. Descubre sus características sensoriales, aprende buenas prácticas para disfrutarlo plenamente y celebra con un ritual de brindis que hará de esta experiencia algo inolvidable.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact d-none">
+    <div class="container-lg p-2">
+        <h2>¿Quieres saber más?</h2>
+        <div class="row">
+            <div class="col-md-6 py-2 order-xs-2 order-sm-2 order-md-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <form>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
+                        <label for="nombre" class="form-label">Nombre</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="tel" class="form-control" id="telefono">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <textarea class="form-control" id="comentario" rows="3"></textarea>
+                        <label for="comentario" class="form-label">Comentario</label>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+                      </div>
+                </form>
+            </div>
+            <div class="col-md-6 py-2 order-xs-1 order-sm-1 order-md-2">
+                <img src="{{ url_for('static', filename='images/contactus_image.webp') }}" class="img-fluid" alt="Image">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
