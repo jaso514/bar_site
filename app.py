@@ -17,4 +17,4 @@ def menu():
     return send_from_directory('static/files', 'menu_2024_diciembre.pdf')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
