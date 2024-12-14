@@ -15,6 +15,9 @@ header {
   background-size: cover;
 }
 
+header .navbar {
+  z-index: 2000;
+}
 p.lead {
   font-size: 1.5rem;
 }
@@ -94,6 +97,9 @@ section h2 {
   opacity: 1; /* Show the overlay on hover */
 }
 
+footer .copyright {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 @media (max-width: 991px) {
 
   header {

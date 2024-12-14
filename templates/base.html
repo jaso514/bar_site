@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>2bleB Bar</title>
+        <title>2bleB Bar - Barra Móvil para eventos - Coctelería y Mixología</title>
         <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/png" sizes="16x16">
         
-        <meta name="description" content="Los mejores cócteles, donde tú quieras. Nuestra barra móvil combina ingredientes de primera calidad y técnicas de mixología innovadoras para ofrecerte una variedad infinita de sabores. ¡Deleita tu paladar!">
+        <meta name="description" content="Cócteles premium a tu medida. Nuestra barra móvil te lleva los mejores sabores y mixología innovadora a donde quieras.">
         <meta name="keywords" content="bar, 2bleB, cocktails, mixologia, bebida, barra movil, uruguay, montevideo">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
+        <link rel="cannonical" href="{{ url_for('index', _external=True) }}">
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGQDL9Q4YM"></script>
         <script>
@@ -32,10 +34,10 @@
     </head>
     <body>
         <header class="position-absolute w-100">
-            <nav class="navbar navbar-expand-lg navbar-dark d-lg-block" style="z-index: 2000;">
+            <nav class="navbar navbar-expand-lg navbar-dark d-lg-block">
                 <div class="container d-flex">
                     <!-- Navbar brand -->
-                    <a class="navbar-brand nav-link logo-link" target="_blank" href="/">
+                    <a class="navbar-brand nav-link logo-link" target="_blank" href="{{ url_for('index', _external=True) }}">
                         <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="Logo" class="logo">
                     </a>
 
@@ -81,15 +83,15 @@
                     {% include "social_links.html" %}
                 </div>
 
-                <a class="navbar-brand nav-link logo-link py-2" target="_blank" href="/">
-                    <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="Logo" class="logo">
+                <a class="navbar-brand nav-link logo-link py-2" target="_blank" href="{{ url_for('index', _external=True) }}">
+                    <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="Logo" class="logo" loading="lazy">
                 </a>
                 
             </div>
             
 
             <!-- Copyright -->
-            <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.1);">
+            <div class="text-center p-2 copyright">
                 &copy; {{ current_year }} Copyright: <b>2bleB</b>
             </div>
             <!-- Copyright -->
