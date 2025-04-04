@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container-fluid" id="contact-us">
+    <div class="container-lg st-container">
+        <h1>¿Quieres saber más?</h1>
+        <div class="row justify-content-around">
+            <div class="col-md-6 py-2 order-xs-2 order-sm-2 order-md-1">
+                <p>¿Quieres una barra móvil sin complicaciones? Dinos dónde y cuándo, y nosotros llevaremos la fiesta.</p>
+                <small>* Todos los campos son obligatorios</small>
+                <form method="post" action="{{ url_for('contact') }}">
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nombreHelp" required>
+                        <label for="name" class="form-label">Nombre</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <label for="phone" class="form-label">Teléfono</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="description" name="description" aria-describedby="description" required>
+                        <label for="description" class="form-label">Descripción del Evento</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="location" name="location" aria-describedby="location" required>
+                        <label for="location" class="form-label">Ubicación</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="event_date" name="event_date" aria-describedby="Fecha" required>
+                        <label for="event_date" class="form-label">Fecha</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="event_time" name="event_time" aria-describedby="Hora" required>
+                        <label for="event_time" class="form-label">Hora de inicio</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="service_duration" name="service_duration" aria-describedby="Duración" required>
+                        <label for="service_duration" class="form-label">Duración del Servicio</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="number" class="form-control" id="guests_adult" name="guests_adult" aria-describedby="Adultos" required>
+                        <label for="guests_adult" class="form-label">Cantidad de Adultos</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="number" class="form-control" id="guests_teens" name="guests_teens" aria-describedby="Menores de edad" required>
+                        <label for="guests_teens" class="form-label">Cantidad de Adolescentes</label>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                </form>
+            </div>
+            <div class="col-md-6 py-2 order-xs-1 order-sm-1 order-md-2 text-right">
+                <img src="{{ url_for('static', filename='images/contactus_image.webp') }}" class="img-fluid" 
+                    alt="Contacteneos para saber más" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
