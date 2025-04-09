@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-        <link rel="cannonical" href="{{ url_for('index', _external=True) }}">
+        <link rel="cannonical" href="{{ url_for('home.index', _external=True) }}">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGQDL9Q4YM"></script>
@@ -37,7 +37,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark d-lg-block">
                 <div class="container d-flex">
                     <!-- Navbar brand -->
-                    <a class="navbar-brand nav-link logo-link" target="_blank" href="{{ url_for('index', _external=True) }}">
+                    <a class="navbar-brand nav-link logo-link" target="_blank" href="{{ url_for('home.index', _external=True) }}">
                         <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="Logo" class="logo">
                     </a>
 
@@ -83,7 +83,7 @@
                     {% include "social_links.html" %}
                 </div>
 
-                <a class="navbar-brand nav-link logo-link py-2" target="_blank" href="{{ url_for('index', _external=True) }}">
+                <a class="navbar-brand nav-link logo-link py-2" target="_blank" href="{{ url_for('home.index', _external=True) }}">
                     <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="Logo" class="logo" loading="lazy">
                 </a>
                 
@@ -98,5 +98,6 @@
         </footer>
         <!--Footer-->
         
+        {% block foot_scripts %}{% endblock %}
     </body>
 </html>

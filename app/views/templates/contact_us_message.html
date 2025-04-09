@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container-fluid" id="contact-us">
+    <div class="container-lg st-container">
+        <h1>Gracias por contactarnos</h1>
+        <div class="row justify-content-around">
+            <div class="col-md-6 py-2 order-xs-2 order-sm-2 order-md-1">
+                <p>Pronto procesaremos tu solicitud y te contactaremos a la brevedad.</p>
+            </div>
+            <div class="col-md-6 py-2 order-xs-1 order-sm-1 order-md-2 text-right">
+                <img src="{{ url_for('static', filename='images/contactus_image.webp') }}" class="img-fluid" 
+                    alt="Contacteneos para saber más" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
